@@ -23,5 +23,11 @@ function newItem() {
   cancelButton.append(document.createTextNode('X'));
   li.append(cancelButton);
 
+  //Delete to-do list item on clicking 'X' button
+  cancelButton.on("click", deleteListItem);
+  function deleteListItem(){
+    li.addClass("delete")
+  }
+
 
 }
