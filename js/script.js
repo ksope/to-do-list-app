@@ -18,5 +18,10 @@ function newItem() {
 
 	li.on("dblclick", crossOut);
 
+  //3. Add an 'X' button to delete to-do list item
+  let cancelButton = $('<crossOutButton></crossOutButton>');
+  cancelButton.append(document.createTextNode('X'));
+  li.append(cancelButton);
+
 
 }
