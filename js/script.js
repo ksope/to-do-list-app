@@ -11,5 +11,12 @@ function newItem() {
     $('#list').append(li);
   }
 
+  //2. Crossing an item out by double-clicking on it:
+  function crossOut() {
+		li.toggleClass("strike");
+	}
+
+	li.on("dblclick", crossOut);
+
 
 }
